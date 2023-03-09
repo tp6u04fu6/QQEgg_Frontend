@@ -33,7 +33,7 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
-  
+
   data() {
     return {
       isTransparent: this.transparent,
@@ -67,8 +67,8 @@ const props = defineProps({
         this.isSticky = false;
       }
     },
-    ChangeColor(){
-      document.querySelector('a').style.color="red"
+    ChangeColor() {
+      document.querySelector('a').style.color = "red"
     }
   },
 });
@@ -175,24 +175,26 @@ watch(
             (props.transparent && textDark.value) || !props.transparent
               ? 'text-dark font-weight-bolder ms-sm-3'
               : 'text-white font-weight-bolder ms-sm-3'
-          ]" href="#"  onclick="smoothToPricing('pricing-soft-ui')" >加入合作空間</a>
+          ]" href="#" onclick="smoothToPricing('pricing-soft-ui')">加入合作空間</a>
         </ul>
         <ul class="navbar-nav d-lg-block d-none ">
           <li class="nav-item dropdown dropdown-hover ">
             <a href="#" class="nav-link  d-flex align-items-center cursor-pointer happ-icon-menu icon-menu"
               data-bs-toggle="dropdown" aria-expanded="false">
               <div style="border-radius: 40%; background-color: rgba(255, 255, 255, 0.7); padding: 8px;">
-                <font-awesome-icon :icon="['fa', 'bars']" size="2x" style="margin-right: 5px;"></font-awesome-icon>
-                <font-awesome-icon :icon="['fa', 'user']" size="2x"></font-awesome-icon>
+                <span class="material-icons" style="font-size: 3em;">
+                  manage_accounts
+                </span>
+
               </div>
             </a>
             <div class="dropdown-menu dropdown-menu-end dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg"
               aria-labelledby="pricingDropdown">
-              <RouterLink :to="{name:'about'}" class="dropdown-item py-3 ps-3 border-radius-md " style="color: black;" :href="action.route"
-                 ><span>{{ action.label1 }}</span></RouterLink>
+              <RouterLink :to="{ name: 'about' }" class="dropdown-item py-3 ps-3 border-radius-md " style="color: black;"
+                :href="action.route"><span>{{ action.label1 }}</span></RouterLink>
               <a class="dropdown-item py-3 ps-3 border-radius-md" style="color: black;" href="#pricing-soft-ui"
                 onclick="smoothToPricing('pricing-soft-ui')">註冊</a>
-              <a class="dropdown-item py-3 ps-3 border-radius-md" style="color: black;" href="#pricing-soft-ui" 
+              <a class="dropdown-item py-3 ps-3 border-radius-md" style="color: black;" href="#pricing-soft-ui"
                 onclick="smoothToPricing('pricing-soft-ui')">領取優惠</a>
               <a class="dropdown-item py-3 ps-3 border-radius-md" style="color: black;" href="#pricing-soft-ui"
                 onclick="smoothToPricing('pricing-soft-ui')">常見問答</a>

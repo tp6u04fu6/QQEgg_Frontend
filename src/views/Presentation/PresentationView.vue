@@ -2,7 +2,7 @@
 import { onMounted, onUnmounted } from "vue";
 
 //example components
-import NavbarDefault from "../../examples/navbars/NavbarDefault.vue";
+import NavbarDefault from "../../examples/navbars/NavbarDefault.vue"
 import DefaultFooter from "../../examples/footers/FooterDefault.vue";
 import Header from "../../examples/Header.vue";
 import homefooter from "../../examples/footers/homefooter.vue";
@@ -64,8 +64,7 @@ onUnmounted(() => {
     </div>
   </div>
 
-
-      <presentation跑馬燈 />
+<presentation跑馬燈 />
   <PresentationTestimonials />
   <presentation使用者操作 />
   <div class="container-fluid">
