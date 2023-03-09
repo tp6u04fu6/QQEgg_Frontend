@@ -49,132 +49,87 @@ defineProps({
     },
     default: () => [
       {
-        name: "company",
+        name: "認識Xiang",
         items: [
           {
-            name: "about us",
+            name: "關於我們",
             href: "https://www.creative-tim.com/presentation"
           },
-          {
-            name: "freebies",
-            href: "https://www.creative-tim.com/templates/free"
-          },
-          {
-            name: "premium tools",
-            href: "https://www.creative-tim.com/templates/premium"
-          },
-          { name: "blog", href: "https://www.creative-tim.com/blog" }
+          { name: "加入我們", href: "https://www.creative-tim.com/blog" }
         ]
       },
       {
-        name: "resources",
+        name: "攜手Xiang",
         items: [
-          { name: "illustrations", href: "https://iradesign.io/" },
+          { name: "供應商登入", href: "https://iradesign.io/" },
           {
-            name: "bits & snippets",
+            name: "合作夥伴",
             href: "https://www.creative-tim.com/bits"
           },
-          {
-            name: "affiliate program",
-            href: "https://www.creative-tim.com/affiliates/new"
-          }
+
         ]
       },
       {
-        name: "help & support",
+        name: "使用條款",
         items: [
           {
-            name: "contact us",
+            name: "使用條款",
             href: "https://www.creative-tim.com/contact-us"
           },
           {
-            name: "knowledge center",
+            name: "隱私政策",
             href: "https://www.creative-tim.com/knowledge-center"
           },
           {
-            name: "custom development",
+            name: "Cookie政策",
             href: "https://services.creative-tim.com/"
           },
           {
-            name: "sponsorships",
+            name: "技術問題",
             href: "https://www.creative-tim.com/sponsorships"
           }
         ]
       },
-      {
-        name: "legal",
-        items: [
-          {
-            name: "terms & conditions",
-            href: "https://www.creative-tim.com/terms"
-          },
-          {
-            name: "privacy policy",
-            href: "https://www.creative-tim.com/privacy"
-          },
-          {
-            name: "licenses (EULA)",
-            href: "https://www.creative-tim.com/license"
-          }
-        ]
-      }
     ]
   }
 });
 </script>
 <template>
-  <footer class="footer pt-5 mt-5">
-    <div class="container">
+  <footer class="footer py-5">
+    <div class="container p-0" >
       <div class="row">
-        <div class="col-md-3 mb-4 ms-auto">
+        <div class="col-4  ">
           <div>
-            <a :href="brand.route">
-              <img :src="brand.logo" class="mb-3 footer-logo" alt="main_logo" />
-            </a>
-            <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
-          </div>
-          <div>
-            <ul class="d-flex flex-row ms-n3 nav">
-              <li
-                class="nav-item"
-                v-for="{ icon, link } of socials"
-                :key="link"
-              >
-                <a
-                  class="nav-link pe-1"
-                  :href="link"
-                  target="_blank"
-                  v-html="icon"
-                >
-                </a>
-              </li>
-            </ul>
+            <img src="../../assets/img/logo100x60.png">
+            <h3 class="fw-bold" style="font-size: 24px;">讓每次推開門都是一段絕無僅有的美好時光</h3>
+            <p style="font-size: 16px; line-height: 1.5; margin-top: 20px;">
+              Happ. 小樹屋想帶給你的不僅僅是空間，更是一段絕無僅有的時光；獻給每個「實現此刻」的你，讓美好的事物與回憶就此發生。
+            </p>
           </div>
         </div>
-        <div
-          class="col-md-2 col-sm-6 col-6 mb-4"
-          v-for="{ name, items } of menus"
-          :key="name"
-        >
+        <div class="col-lg-1 col-sm-6 col-md-2 mb-4 offset-1" v-for="{ name, items } of menus" :key="name">
           <h6 class="text-sm">{{ name }}</h6>
           <ul class="flex-column ms-n3 nav">
             <li class="nav-item" v-for="item of items" :key="item.name">
-              <a class="nav-link" :href="item.href" target="_blank">
-                {{ item.name }}
-              </a>
+              <a class="nav-link" :href="item.href" target="_blank">{{ item.name }}</a>
             </li>
           </ul>
         </div>
-
+        <div class="col-lg-1 col-sm-6 col-md-2 mb-4 offset-1">
+          <h6 class="text-sm">付款方式</h6>
+          <ul class="flex-column ms-n3 nav">
+            <li class="nav-item">
+              <span class="nav-link" href="#">
+                <img src="../../assets/img/logo100x60.png" alt="綠界信用卡支付"
+                  style="max-height: 30px;"></span>
+            </li>
+          </ul>
+        </div>
         <div class="col-12">
+          <hr style="border-color: #ddd;">
           <div class="text-center">
             <p class="text-dark my-4 text-sm font-weight-normal">
-              All rights reserved. Copyright ©
-              {{ new Date().getFullYear() }}
-              Material Kit by
-              <a href="https://www.creative-tim.com" target="_blank"
-                >Creative Tim</a
-              >.
+              僅作第四組專題使用 &copy; {{ new Date().getFullYear() }} 台南全端班 All rights reserved
             </p>
           </div>
         </div>
@@ -182,3 +137,4 @@ defineProps({
     </div>
   </footer>
 </template>
+
