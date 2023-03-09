@@ -4,7 +4,7 @@ import { onMounted, onUnmounted } from "vue";
 //example components
 
 import DefaultFooter from "../../../examples/footers/FooterDefault.vue";
-import NavbarDefault from "../..//examples/navbars/NavbarDefault.vue";
+import NavbarDefault from "../../../examples/navbars/NavbarDefault.vue";
 //image
 import bg0 from "@/assets/img/bg9.jpg";
 
