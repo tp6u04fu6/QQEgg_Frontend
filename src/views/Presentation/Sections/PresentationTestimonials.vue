@@ -1,88 +1,86 @@
 <script setup>
-import DefaultReviewCard from "@/examples/cards/reviewCards/DefaultReviewCard.vue";
+
 </script>
 <template>
   <section class="py-7">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mx-auto text-center">
-          <h2 class="mb-0">Trusted by over</h2>
-          <h2 class="text-gradient text-success mb-3">
-            1,679,477+ web developers
-          </h2>
-          <p class="lead">
-            Many Fortune 500 companies, startups, universities and governmental
-            institutions love Creative Tim's products.
-          </p>
-        </div>
-      </div>
-      <div class="row mt-6">
-        <DefaultReviewCard
-          name="Nick Willever"
-          date="1 day ago"
-          review='"This is an excellent product, the documentation is excellent and
-          helped me get things done more efficiently."'
-          :rating="5.0"
-        />
-        <DefaultReviewCard
-          class="ms-md-auto"
-          color="bg-gradient-success"
-          name="Shailesh Kushwaha"
-          date="1 week ago"
-          review='"I found solution to all my design needs from Creative Tim. I
-                  use them as a freelancer in my hobby projects for fun! And its
-                  really affordable, very humble guys !!!"'
-          :rating="5.0"
-        />
-
-        <DefaultReviewCard
-          name="Samuel Kamuli"
-          date="3 weeks ago"
-          review='"Great product. Helped me cut the time to set up a site. I
-                  used the components within instead of starting from scratch. I
-                  highly recommend for developers who want to spend more time on
-                  the backend!."'
-          :rating="5.0"
-        />
-      </div>
-      <hr class="horizontal dark my-5" />
-      <div class="row">
-        <div class="col-lg-2 col-md-4 col-6 ms-auto">
-          <img
-            class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-apple.svg"
-            alt="Logo"
-          />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <img
-            class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-facebook.svg"
-            alt="Logo"
-          />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6">
-          <img
-            class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-nasa.svg"
-            alt="Logo"
-          />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 ms-lg-0 ms-md-auto">
-          <img
-            class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-vodafone.svg"
-            alt="Logo"
-          />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 me-md-auto mx-md-0 mx-auto">
-          <img
-            class="w-100 opacity-6"
-            src="@/assets/img/logos/gray-logos/logo-digitalocean.svg"
-            alt="Logo"
-          />
+          <h2 class="mb-0">讓想家的人有一個家的感覺....</h2>
+          <h4 class="text-gradient text-success mb-3">
+          持續創造空間的可能，豐富您的工作與生活環境。
+        </h4>
         </div>
       </div>
     </div>
+    <div class="container py-6">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card " style="width: 18rem;">
+            <img src="../../../assets/img/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../../../assets/img/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../../../assets/img/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 </template>
+
+<style>
+.img {
+  width: 300px;
+  height: 300px;
+}
+</style>
